@@ -1,0 +1,33 @@
+<header>
+    <div class="back-button">
+        <a href="#!/"><img src="assets/images/back-arrow.png" height="32" width="32" alt="jsalinlee home"></a>
+    </div>
+</header>
+<div class="container">
+    <div class="portfolio-body" ng-init="gallery.projectIdx = 1">
+        <h1>Tamagotchi</h1>
+        <div class="github-div" ng-style="gitLinkStyle"><a class="github-link" href="https://github.com/jsalinlee/Tamagotchi"><img src="assets/images/GitHub-Mark-64px.png" alt="tamagotchi github link"></a></div>
+        <div class="vertical-project-wrapper">
+            <div class="portfolio-image-viewer-v">
+                <div class="viewer-control-prev-v" ng-click="gallery.changeImg(false, gallery.projectIdx)"><div><</div></div>
+                <img id="image" class="project-image-v" ng-class="{fadeOut: projectImage, fadeIn: !projectImage}" src="assets/images/{{gallery.images[gallery.projectIdx][gallery.imageIdx]}}" alt="tamagotchi main screen">
+                <div class="viewer-control-next-v" ng-click="gallery.changeImg(true, gallery.projectIdx)"><div>></div></div>
+            </div>
+            <div class="portfolio-desc-v" ng-style="descStyle">
+                <p class="p-v">Another hackathon winner with the same team. This time, we had 24 hours and were required to
+                    include MapKit. Tamagotchi is inspired by the virtual pet device of the same name and some mechanics of
+                    Pokemon Go. In our version of Tamagotchi, you have a little critter that lives and thrives under your
+                    care. Over time, it will get hungry and bored and will need berries and some playtime to keep its spirits up.
+                     The game populates the world with berries for you to explore and collect and maybe even a rare toy!</p>
+                <ul>
+                    <h2>Technologies Used</h2>
+                    <li>Swift</li>
+                    <li>SpriteKit</li>
+                    <li>MapKit</li>
+                    <li>Core Data</li>
+                    <li>Xcode</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<header>
+    <div class="back-button">
+        <a href="#!/"><img src="assets/images/back-arrow.png" height="32" width="32" alt="jsalinlee home"></a>
+    </div>
+</header>
+<div class="container">
+    <div class="portfolio-body" ng-init="gallery.projectIdx = 0;">
+        <h1>Let's Shoot Rocks in Space</h1>
+        <div class="github-div" ng-style="gitLinkStyle"><a class="github-link" href="https://github.com/jqchang/spaceship_game"><img src="assets/images/GitHub-Mark-64px.png" alt="spaceships github link"></a></div>
+        <div class="portfolio-image-viewer-h">
+            <div class="viewer-control-prev-h" ng-click="gallery.changeImg(false, 0);"><div><</div></div>
+            <img id="image" class="project-image-h" ng-class="{fadeOut: projectImage, fadeIn: !projectImage}" src="assets/images/{{gallery.images[gallery.projectIdx][gallery.imageIdx]}}" alt="spaceships main screen">
+            <div class="viewer-control-next-h" ng-click="gallery.changeImg(true, 0)"><div>></div></div>
+        </div>
+        <p class="p-h">I worked with two of my bootcamp classmates to recreate classic Asteroids on iOS with a twist.
+            Your ship's movement is controlled with motion controls, giving the game an addictive learning curve. We developed
+            the game in 3 days for a SpriteKit hackathon and received 1st place. Before the hackathon, we had zero knowledge of
+            SpriteKit and Core Motion. Our hackathon build featured a boss and an endless world, but were later scrapped for
+            future plans. Currently, LSRIS is transitioning to the Unity game engine with plans of becoming a cooperative
+            multiplayer dogfighting game.</p>
+        <ul>
+            <h2>Technologies Used</h2>
+            <li>Swift</li>
+            <li>SpriteKit</li>
+            <li>Core Motion</li>
+            <li>Xcode</li>
+        </ul>
+    </div>
+</div>

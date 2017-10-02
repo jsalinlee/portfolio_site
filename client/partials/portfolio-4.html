@@ -1,0 +1,30 @@
+<header>
+    <div class="back-button">
+        <a href="#!/"><img src="assets/images/back-arrow.png" height="32" width="32" alt="jsalinlee home"></a>
+    </div>
+</header>
+<div class="container">
+    <div class="portfolio-body" ng-init="gallery.projectIdx = 3;">
+        <h1>Scavengers</h1>
+        <div class="github-div" ng-style="gitLinkStyle"><a class="github-link" href="https://github.com/jsalinlee/scavengers"><img src="assets/images/GitHub-Mark-64px.png" alt="scavengers github link"></a></div>
+        <div class="portfolio-image-viewer-h">
+            <div class="viewer-control-prev-h" ng-click="gallery.changeImg(false, gallery.projectIdx)"><div><</div></div>
+            <img id="image" class="project-image-h" ng-class="{fadeOut: projectImage, fadeIn: !projectImage}" src="assets/images/{{gallery.images[gallery.projectIdx][gallery.imageIdx]}}" alt="scavengers main screen">
+            <div class="viewer-control-next-h" ng-click="gallery.changeImg(true, gallery.projectIdx)"><div>></div></div>
+        </div>
+        <div class="portfolio-desc-h">
+            <p class="p-h">A fun side project developed with two of my gaming friends. We played numerous survival games
+                and decided to develop one with the elements we wanted and without the elements we disliked. Other than a few placeholder sprites, all of the content in Scavengers will be originally handcrafted.
+                 In Scavengers, you live in a desolate wasteland surrounded by abandoned spaceships, and hostile inhabitants.
+                 As you pick your way through scraps of worn technology, build your way up from rusty drones and sheet metal huts to
+                 fully-customizable walker mechs and a respectable home base.</p>
+            <ul>
+                <h2>Technologies Used</h2>
+                <li>Unity</li>
+                <li>C#</li>
+                <li>Visual Studio</li>
+                <li>MonoDevelop</li>
+            </ul>
+        </div>
+    </div>
+</div>

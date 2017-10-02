@@ -1,0 +1,113 @@
+<header>
+    <div class="home">
+        <button ng-click="reload()" type="button"><img src="assets/images/jsalinleelogo2.png" height="48" width="24" alt="jsalinlee home"></button>
+    </div>
+    <div ng-hide="hidenavlinks" class="quicklinks">
+        <a ng-click="scrollToSection('aboutme')" class="quicklink">About</a>
+        <a ng-click="scrollToSection('skillset')" class="quicklink">Skills</a>
+        <a ng-click="scrollToSection('portfolio')" class="quicklink">Portfolio</a>
+        <a ng-click="scrollToSection('contact')" class="quicklink">Contact</a>
+    </div>
+    <ul class="quickmenu-options">
+        <button ng-hide="hidequickmenu" ng-click="showquicklinks()" class="quickmenu" type="button"><img src="assets/images/quickmenu-icon.png" height="32" width="32" alt="quick menu icon"></button>
+        <div ng-show="hidequicklink" class="dropdown-show">
+            <li><a ng-click="scrollToSection('aboutme')" class="quickmenulink">About</a></li>
+            <li><a ng-click="scrollToSection('skillset')" class="quickmenulink">Skills</a></li>
+            <li><a ng-click="scrollToSection('portfolio')" class="quickmenulink">Portfolio</a></li>
+            <li><a ng-click="scrollToSection('contact')" class="quickmenulink">Contact</a></li>
+        </div>
+    </ul>
+</header>
+<div class="banner">
+    <div id="name_scaler" class="name-scaler">
+        <div id="name_layout" class="name-layout">
+            <img src="assets/images/jsalinleelogo2.png" height="256" width="128" alt="jsalinlee logo">
+            <h1 class="name">Jonathan Salin Lee</h1>
+            <h3 class = "title">Full Stack Developer</h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="aboutme" class="aboutme">
+        <h1>About Me</h1>
+        <p class="aboutdesc" ng-style="aboutStyle">Hey there! A little background on how I came to be a programmer: A couple of years ago, I was
+            diagnosed with clinical depression and it held me back for quite a while. I spent several years
+            spinning my wheels in school, trying to pursue a Computer Science degree. I was amazed by what
+            could be built with programming, but had little love for school and theory. I just wanted to build.
+            After a long year of therapy, medication, and self-reconstruction, I decided to drop out of school and
+            apply to a coding bootcamp. After 3 1/2 hard months of coding, I am even more amazed by what
+            programmers have done, and excited to finally have the tools to join in on the fun.
+            <br><br>
+            I am highly adaptable to new technologies, calm and collected under stress, and ready for a good puzzle.
+            <br><br>
+            My name is Jonathan Salin Lee and I am an up-and-coming developer, ready to
+            make a mark in the programming industry. Whether that mark is big or small, my dream is to bring
+            a little joy to the world.</p>
+        <img class="profilepicture" src="assets/images/profilepicture.jpg" height="486" width="365" alt="jsalinlee profile picture">
+    </div>
+    <div class="background">
+    </div>
+    <div id="skillset" class="skillset">
+        <h1>Technical Skillset</h1>
+        <ul>
+            <h2>Languages</h2>
+            <li>Swift</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+        </ul>
+        <ul>
+            <h2>Libraries/Frameworks</h2>
+            <li>jQuery</li>
+            <li>Express</li>
+            <li>Angular</li>
+            <li>Flask</li>
+            <li>Django</li>
+            <li>SpriteKit</li>
+        </ul>
+        <ul>
+            <h2>Databases</h2>
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li>MongoDB</li>
+            <li>Core Data</li>
+        </ul>
+        <ul>
+            <h2>Engines</h2>
+            <li>Unity</li>
+        </ul>
+        <ul>
+            <h2>Miscellaneous</h2>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>AWS</li>
+            <li>Xcode</li>
+            <li>Atom.io</li>
+            <li>Visual Studio</li>
+        </ul>
+    </div>
+    <div class="background">
+    </div>
+    <div id="portfolio" class="portfolio">
+        <h1>My Work</h1>
+        <div class="portfolio-piece-h">
+            <h2>Let's Shoot Rocks in Space</h2>
+            <a href="#!/portfolio1"><img src="assets/images/portfolio-images/LSRIS-main.png" alt="spaceships main"></a>
+        </div>
+        <div class="portfolio-piece-v">
+            <h2>Tamagotchi</h2>
+            <a href="#!/portfolio2"><img src="assets/images/portfolio-images/Tamagotchi-main.png" alt="tamagotchi main"></a>
+        </div>
+        <div class="portfolio-piece-v">
+            <h2>GainBoy</h2>
+            <a href="#!/portfolio3"><img src="assets/images/portfolio-images/GainBoy-main.png" alt="gainboy main"></a>
+        </div>
+        <div class="portfolio-piece-h">
+            <h2>Scavengers</h2>
+            <a href="#!/portfolio4"><img src="assets/images/portfolio-images/scavengers-sample1.png" alt="scavengers main"></a>
+        </div>
+    </div>
+</div>

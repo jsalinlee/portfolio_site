@@ -1,0 +1,335 @@
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Quattrocento Sans", sans-serif;
+  margin: 0; }
+  body header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    display: inline-block;
+    background-color: #8f97a3; }
+    body header .home {
+      display: inline-block;
+      vertical-align: middle; }
+      body header .home button {
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        background-color: inherit; }
+    body header .quicklinks {
+      display: inline-block;
+      float: right; }
+      body header .quicklinks a {
+        text-align: center;
+        float: left;
+        width: 120px;
+        padding: 19px 0;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        margin: none;
+        color: #5c5072;
+        background-color: inherit;
+        font-family: "Quattrocento Sans", sans-serif;
+        font-size: 20px; }
+      body header .quicklinks .quicklink:hover {
+        color: #8f97a3;
+        background-color: #5c5072; }
+    body header .quickmenu-options {
+      position: absolute;
+      top: -16px;
+      right: 0%;
+      width: 120px;
+      padding: 0;
+      list-style: none;
+      z-index: 100;
+      background-color: inherit; }
+      body header .quickmenu-options .dropdown-show {
+        height: 240px;
+        overflow: hidden; }
+      body header .quickmenu-options .dropdown-show.ng-hide {
+        height: 0; }
+      body header .quickmenu-options .dropdown-show.ng-hide-add, body header .quickmenu-options .dropdown-show.ng-hide-remove {
+        transition: all linear 0.25s; }
+      body header .quickmenu-options li {
+        position: relative; }
+      body header .quickmenu-options .quickmenu {
+        display: block;
+        width: 60px;
+        margin-left: 60px;
+        height: 60px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        color: #5c5072; }
+      body header .quickmenu-options .quickmenulink:hover {
+        color: #8f97a3;
+        background-color: #5c5072; }
+      body header .quickmenu-options .quickmenulink {
+        display: block;
+        width: 82px;
+        padding: 19px;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        margin: 0;
+        color: #5c5072;
+        background-color: inherit;
+        font-family: "Quattrocento Sans", sans-serif;
+        font-size: 20px; }
+  body .banner {
+    text-align: center;
+    position: relative;
+    height: inherit;
+    width: 100%;
+    background-image: url("../images/dojo-graduation-cropped.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #5c5072;
+    background-position: top center; }
+    body .banner .name-scaler {
+      resize: both;
+      position: relative;
+      height: inherit; }
+      body .banner .name-scaler .name-layout {
+        position: relative;
+        height: 100vh;
+        width: 100vw; }
+        body .banner .name-scaler .name-layout img {
+          margin-top: 30vh;
+          width: 20vmin;
+          height: auto; }
+        body .banner .name-scaler .name-layout .name, body .banner .name-scaler .name-layout .title {
+          margin: 0;
+          color: white;
+          font-size: 9vmin;
+          font-style: oblique; }
+        body .banner .name-scaler .name-layout .title {
+          font-size: 5.13vmin;
+          padding: 0px 0px 23px 0px;
+          color: #617B94; }
+  body .container {
+    text-align: center;
+    color: #617B94;
+    margin-bottom: 80px;
+    width: 100%; }
+    body .container h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 40px 0 20px 0; }
+    body .container .aboutme {
+      margin-bottom: 80px; }
+      body .container .aboutme p {
+        display: inline-block;
+        text-align: left;
+        font-size: 24px;
+        width: 30%;
+        margin: 0 40px; }
+      body .container .aboutme img {
+        display: inline-block;
+        vertical-align: top;
+        margin: 30px auto;
+        padding: 1px;
+        border: 2px solid #617B94; }
+    body .container .skillset {
+      margin-bottom: 80px;
+      display: inline-block; }
+      body .container .skillset h1 {
+        padding-bottom: 0; }
+      body .container .skillset ul {
+        margin: 0;
+        padding: 20px 30px;
+        vertical-align: top;
+        display: inline-block; }
+        body .container .skillset ul h2 {
+          font-size: 26px;
+          margin-bottom: 15px; }
+        body .container .skillset ul li {
+          font-size: 22px;
+          list-style: none; }
+    body .container .portfolio {
+      margin-bottom: 80px; }
+  body .portfolio-piece-h a img {
+    height: 250px;
+    width: 444px;
+    padding: 1px;
+    border: 2px solid #617B94; }
+  body .portfolio-piece-v {
+    display: inline-block; }
+    body .portfolio-piece-v a img {
+      height: 444px;
+      width: 250px;
+      padding: 1px;
+      border: 2px solid #617B94; }
+  body .background {
+    height: 300px;
+    background-color: #5c5072;
+    background-image: url("../images/jsalinleelogo2.png");
+    background-size: 128px 256px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; }
+  body .home {
+    text-align: center;
+    height: 60px;
+    width: 60px; }
+  body .back-button {
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    margin-top: 14px; }
+  body .portfolio-body {
+    margin-top: 60px;
+    text-align: left; }
+    body .portfolio-body h1, body .portfolio-body img {
+      display: inline-block;
+      vertical-align: middle; }
+    body .portfolio-body h1 {
+      width: 50vw;
+      padding: 40px 0 40px 40px;
+      margin: 0 auto; }
+    body .portfolio-body .github-div {
+      width: 40vw;
+      padding-bottom: 40px;
+      text-align: right;
+      display: inline-block; }
+    body .portfolio-body .github-link {
+      margin: auto 20px auto auto; }
+    body .portfolio-body .portfolio-image-viewer-h, body .portfolio-body .portfolio-image-viewer-v {
+      user-select: none;
+      text-align: center;
+      position: relative;
+      width: 80vmin;
+      margin: 0 auto;
+      background-color: black;
+      border: 2px solid #617B94; }
+      body .portfolio-body .portfolio-image-viewer-h .portfolio-image-viewer-v, body .portfolio-body .portfolio-image-viewer-v .portfolio-image-viewer-v {
+        display: inline-block; }
+      body .portfolio-body .portfolio-image-viewer-h .viewer-control-prev-h, body .portfolio-body .portfolio-image-viewer-h .viewer-control-prev-v, body .portfolio-body .portfolio-image-viewer-v .viewer-control-prev-h, body .portfolio-body .portfolio-image-viewer-v .viewer-control-prev-v {
+        z-index: 5;
+        text-align: center;
+        width: 15%;
+        height: 45vmin;
+        position: absolute;
+        background: -moz-linear-gradient(left, rgba(92, 80, 114, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(92, 80, 114, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(92, 80, 114, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a65c5072', endColorstr='#00ffffff',GradientType=1 );
+        /* IE6-9 */
+        transition: opacity 0.4s;
+        opacity: 0.5; }
+      body .portfolio-body .portfolio-image-viewer-h .viewer-control-prev-v, body .portfolio-body .portfolio-image-viewer-v .viewer-control-prev-v {
+        height: 80vmin;
+        width: 10%; }
+      body .portfolio-body .portfolio-image-viewer-h .viewer-control-next-h, body .portfolio-body .portfolio-image-viewer-h .viewer-control-next-v, body .portfolio-body .portfolio-image-viewer-v .viewer-control-next-h, body .portfolio-body .portfolio-image-viewer-v .viewer-control-next-v {
+        top: 0;
+        right: 0;
+        text-align: center;
+        width: 15%;
+        height: 45vmin;
+        position: absolute;
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(92, 80, 114, 0.65) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(92, 80, 114, 0.65) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(92, 80, 114, 0.65) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a65c5072',GradientType=1 );
+        /* IE6-9 */
+        transition: opacity 0.4s;
+        opacity: 0.5; }
+      body .portfolio-body .portfolio-image-viewer-h .viewer-control-next-v, body .portfolio-body .portfolio-image-viewer-v .viewer-control-next-v {
+        height: 80vmin;
+        width: 10%; }
+      body .portfolio-body .portfolio-image-viewer-h .viewer-control-prev-h:hover, body .portfolio-body .portfolio-image-viewer-h .viewer-control-prev-v:hover, body .portfolio-body .portfolio-image-viewer-h .viewer-control-next-h:hover, body .portfolio-body .portfolio-image-viewer-h .viewer-control-next-v:hover, body .portfolio-body .portfolio-image-viewer-v .viewer-control-prev-h:hover, body .portfolio-body .portfolio-image-viewer-v .viewer-control-prev-v:hover, body .portfolio-body .portfolio-image-viewer-v .viewer-control-next-h:hover, body .portfolio-body .portfolio-image-viewer-v .viewer-control-next-v:hover {
+        opacity: 1;
+        transition: opacity 0.4s; }
+      body .portfolio-body .portfolio-image-viewer-h div div, body .portfolio-body .portfolio-image-viewer-v div div {
+        font-size: 5vmin;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+      body .portfolio-body .portfolio-image-viewer-h .project-image-h, body .portfolio-body .portfolio-image-viewer-v .project-image-h {
+        width: 80vmin;
+        height: 45vmin;
+        display: inline-block; }
+      body .portfolio-body .portfolio-image-viewer-h .project-image-v, body .portfolio-body .portfolio-image-viewer-v .project-image-v {
+        width: 45vmin;
+        height: 80vmin;
+        display: inline-block; }
+      body .portfolio-body .portfolio-image-viewer-h .project-image-h.fadeOut, body .portfolio-body .portfolio-image-viewer-h .project-image-v.fadeOut, body .portfolio-body .portfolio-image-viewer-v .project-image-h.fadeOut, body .portfolio-body .portfolio-image-viewer-v .project-image-v.fadeOut {
+        animation: fadeOutAnimation 1s linear; }
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+      body .portfolio-body .portfolio-image-viewer-h .project-image-h.fadeIn, body .portfolio-body .portfolio-image-viewer-h .project-image-v.fadeIn, body .portfolio-body .portfolio-image-viewer-v .project-image-h.fadeIn, body .portfolio-body .portfolio-image-viewer-v .project-image-v.fadeIn {
+        animation: fadeInAnimation 1s linear; }
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0.4; }
+  100% {
+    opacity: 1; } }
+    body .portfolio-body .portfolio-image-viewer-v {
+      vertical-align: top;
+      width: 45vmin;
+      display: inline-block; }
+      body .portfolio-body .portfolio-image-viewer-v img {
+        width: 45vmin;
+        height: 80vmin;
+        display: inline-block; }
+    body .portfolio-body .vertical-project-wrapper {
+      text-align: center; }
+      body .portfolio-body .vertical-project-wrapper .portfolio-desc-v {
+        display: inline-block;
+        width: 30%;
+        margin-left: 50px; }
+    body .portfolio-body .vertical-project-wrapper ul {
+      text-align: left; }
+    body .portfolio-body .p-h, body .portfolio-body ul, body .portfolio-body li {
+      width: 80%;
+      padding: 40px;
+      margin: 0 auto; }
+    body .portfolio-body .p-v {
+      text-align: left;
+      width: 100%;
+      padding: 20px 0 20px;
+      display: inline-block; }
+    body .portfolio-body p {
+      font-size: 22px;
+      padding-bottom: 20px; }
+    body .portfolio-body ul, body .portfolio-body li {
+      padding: 0; }
+    body .portfolio-body li {
+      font-size: 20px; }
+  body footer {
+    text-align: center;
+    color: #7395b5;
+    background-color: #5c5072;
+    padding: 10px 0 10px 0; }
+    body footer .contact {
+      margin-bottom: 20px; }
+      body footer .contact h1 {
+        font-size: 30px;
+        margin: 10px 0 15px 0; }
+      body footer .contact a {
+        margin: 10px; }
+
+/*# sourceMappingURL=style.css.map */

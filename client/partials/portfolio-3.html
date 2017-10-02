@@ -1,0 +1,34 @@
+<header>
+    <div class="back-button">
+        <a href="#!/"><img src="assets/images/back-arrow.png" height="32" width="32" alt="jsalinlee home"></a>
+    </div>
+</header>
+<div class="container">
+    <div class="portfolio-body" ng-init="gallery.projectIdx = 2;">
+        <h1>GainBoy</h1>
+        <div class="github-div" ng-style="gitLinkStyle"><a class="github-link" href="https://github.com/jsalinlee/GainBoy"><img src="assets/images/GitHub-Mark-64px.png" alt="gainboy github link"></a></div>
+        <div class="vertical-project-wrapper">
+            <div class="portfolio-image-viewer-v">
+                <div class="viewer-control-prev-v" ng-click="gallery.changeImg(false, gallery.projectIdx)"><div><</div></div>
+                <img id="image" class="project-image-v" ng-class="{fadeOut: projectImage, fadeIn: !projectImage}" src="assets/images/{{gallery.images[gallery.projectIdx][gallery.imageIdx]}}" alt="gainboy main screen">
+                <div class="viewer-control-next-v" ng-click="gallery.changeImg(true, gallery.projectIdx)"><div>></div></div>
+            </div>
+            <div class="portfolio-desc-v" ng-style="descStyle">
+                <p class="p-v">GainBoy is a health and fitness app that uses gaming philosophies to add an extra element
+                    of accountability and motivation to working out. GainBoy is heavily inspired by the life-management website, Habitica.
+                    I originally developed GainBoy for personal use, but I will be polishing it up to be deployed on the
+                    App Store. In GainBoy, you are transformed into an RPG character with all the bells and whistles
+                    including health, experience, and gold. You can log workouts into your Adventure Log and track your
+                    weight, personal records, and more on your Character Sheet. Some tentative features of GainBoy include
+                     a section that pulls up an exercise API for easy exercise selection and a Shop section for users to
+                     create their own rewards to work towards.</p>
+                <ul>
+                    <h2>Technologies Used</h2>
+                    <li>Swift</li>
+                    <li>Core Data</li>
+                    <li>Xcode</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
