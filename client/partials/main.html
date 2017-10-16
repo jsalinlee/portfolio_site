@@ -1,6 +1,6 @@
 <header>
     <div class="home">
-        <button ng-click="reload()" type="button"><img src="assets/images/jsalinleelogo2.png" height="48" width="24" alt="jsalinlee home"></button>
+        <button ng-click="reload()" type="button"><img src="assets/images/home-icon.png" height="32" width="32" alt="jsalinlee home"></button>
     </div>
     <div ng-hide="hidenavlinks" class="quicklinks">
         <a ng-click="scrollToSection('aboutme')" class="quicklink">About</a>
@@ -31,12 +31,12 @@
     <div id="aboutme" class="aboutme">
         <h1>About Me</h1>
         <p class="aboutdesc" ng-style="aboutStyle">Hey there! A brief background on how I became a programmer: For most
-            of my life, I struggled in academia. I had a good head on my shoulders, but something about mundane
-            classrooms and repetitive busy work couldn't inspire me. As a gamer, I was amazed by the worlds and
-            experiences that could be built with programming, but had little love for school and theory. By the time
-            college came around, I realized that school was just stalling me from pursuing what I really wanted. I wanted
-            to build and I wanted to build now. After years of wasted time and money, I decided to drop out of school and
-            attend a coding bootcamp. That's my class you see up there! After 3 1/2 hard months of coding, I am even more
+            of my life, I struggled in academia. I had a good head on my shoulders, but something about the academic
+            process couldn't inspire me. As a gamer, I was amazed by the worlds and experiences that could be built with
+            programming, but had little love for lectures and theory. By the time college came around, I realized that
+            school was just stalling me from pursuing what I really wanted. I wanted to build and I wanted to build
+            now. After years of spinning my wheels, I decided to drop out of school and attend a coding bootcamp.
+            That's my class you see up there! After coding 80+ hours a week for 3 1/2 hard months, I am even more
             amazed by what programmers have done and excited to finally join in on the fun.
             <br><br>
             I am highly adaptable to new technologies, calm and collected under stress, and ready for a good puzzle.
@@ -44,7 +44,7 @@
             My name is Jonathan Salin Lee and I am an up-and-coming developer, ready to
             make a mark in the programming industry. Whether that mark is big or small, my dream is to bring
             a little joy to the world.</p>
-        <img class="profilepicture" src="assets/images/profilepicture.jpg" height="486" width="365" alt="jsalinlee profile picture">
+        <img class="profilepicture" ng-style="aboutPicStyle" src="assets/images/profilepicture.jpg" height="486" width="365" alt="jsalinlee profile picture">
     </div>
     <div class="background">
     </div>
@@ -96,19 +96,19 @@
         <h1>My Work</h1>
         <div class="portfolio-piece-h">
             <h2>Let's Shoot Rocks in Space</h2>
-            <a href="#!/portfolio1"><img src="assets/images/portfolio-images/LSRIS-main.png" alt="spaceships main"></a>
+            <a href="#!/portfolio1"><img ng-style="hMobile" src="assets/images/portfolio-images/LSRIS-main.png" alt="spaceships main"></a>
         </div>
         <div class="portfolio-piece-v">
             <h2>Tamagotchi</h2>
-            <a href="#!/portfolio2"><img src="assets/images/portfolio-images/Tamagotchi-main.png" alt="tamagotchi main"></a>
+            <a href="#!/portfolio2"><img ng-style="vMobile" src="assets/images/portfolio-images/Tamagotchi-main.png" alt="tamagotchi main"></a>
         </div>
         <div class="portfolio-piece-v">
             <h2>GainBoy</h2>
-            <a href="#!/portfolio3"><img src="assets/images/portfolio-images/GainBoy-main.png" alt="gainboy main"></a>
+            <a href="#!/portfolio3"><img ng-style="vMobile" src="assets/images/portfolio-images/GainBoy-main.png" alt="gainboy main"></a>
         </div>
         <div class="portfolio-piece-h">
             <h2>Scavengers</h2>
-            <a href="#!/portfolio4"><img src="assets/images/portfolio-images/scavengers-sample1.png" alt="scavengers main"></a>
+            <a href="#!/portfolio4"><img ng-style="hMobile" src="assets/images/portfolio-images/scavengers-sample1.png" alt="scavengers main"></a>
         </div>
     </div>
 </div>

@@ -6,8 +6,10 @@ app.controller("portfolioController", function($scope, $location, $route, $timeo
     var initLoad = function() {
         if(window.innerWidth <= 900) {
             $scope.descStyle = { "width": "80%", "margin-left": "0"}
+            $scope.projectTitleStyle = { "width": "80vw" }
         } else {
             $scope.descStyle = { "width": "30%", "margin-left": "50px" }
+            $scope.projectTitleStyle = { "width": "50vw" }
         }
     }
 
@@ -16,9 +18,11 @@ app.controller("portfolioController", function($scope, $location, $route, $timeo
     var windowResize = function() {
         if(window.innerWidth <= 900) {
             $scope.descStyle = { "width": "80%", "margin-left": "0" }
+            $scope.projectTitleStyle = { "width": "80vw" }
             $scope.$apply()
         } else {
             $scope.descStyle = { "width": "30%", "margin-left": "50px" }
+            $scope.projectTitleStyle = { "width": "50vw" }
             $scope.$apply()
         }
     }

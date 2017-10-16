@@ -8,12 +8,18 @@ app.controller("mainController", function($scope, $location, $document, $route) 
         if(window.innerWidth <= 900) {
             $scope.hidequickmenu = false;
             $scope.hidenavlinks = true;
-            $scope.aboutStyle = { "width": "80%" }
+            $scope.aboutStyle = { "width": "80%", "font-size": "18px" }
+            $scope.hMobile = { "width": "80%", "height": "auto" }
+            $scope.vMobile = { "width": "50%", "height": "auto" }
+            $scope.aboutPicStyle = { "width": "90%", "height": "auto" }
         } else {
             $scope.hidequickmenu = true;
             $scope.hidequicklink = false;
             $scope.hidenavlinks = false;
-            $scope.aboutStyle = { "width": "30%" }
+            $scope.aboutStyle = { "width": "30%", "font-size": "24px" }
+            $scope.hMobile = { "width": "444px", "height": "250px"  }
+            $scope.vMobile = { "width": "250px", "height": "444px"  }
+            $scope.aboutPicStyle = { "width": "365px", "height": "486" }
         }
     }
 
@@ -23,12 +29,18 @@ app.controller("mainController", function($scope, $location, $document, $route) 
         if(window.innerWidth <= 900) {
             $scope.$apply("hidequickmenu = false;")
             $scope.$apply("hidenavlinks = true;")
-            $scope.aboutStyle = { "width": "80%" }
+            $scope.aboutStyle = { "width": "80%", "font-size": "18px" }
+            $scope.hMobile = { "width": "80%", "height": "auto" }
+            $scope.vMobile = { "width": "50%", "height": "auto" }
+            $scope.aboutPicStyle = { "width": "90%", "height": "auto" }
         } else {
             $scope.$apply("hidequickmenu = true;")
             $scope.$apply("hidequicklink = false;")
             $scope.$apply("hidenavlinks = false;")
-            $scope.aboutStyle = { "width": "30%" }
+            $scope.aboutStyle = { "width": "30%", "font-size": "24px" }
+            $scope.hMobile = { "width": "444px", "height": "250px"  }
+            $scope.vMobile = { "width": "250px", "height": "444px"  }
+            $scope.aboutPicStyle = { "width": "365px", "height": "486" }
         }
     }
 
