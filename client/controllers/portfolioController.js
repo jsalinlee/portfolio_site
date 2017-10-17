@@ -39,7 +39,7 @@ app.controller("portfolioController", function($scope, $location, $route, $timeo
         images: [
             ["portfolio-images/LSRIS-main.png", "portfolio-images/LSRIS-sample1.png", "portfolio-images/LSRIS-sample2.png"],
             ["portfolio-images/tamagotchi-main.png", "portfolio-images/tamagotchi-map.png", "portfolio-images/tamagotchi-items.png"],
-            ["portfolio-images/gainboy-main.png", "portfolio-images/gainboy-log.png", "portfolio-images/gainboy-log-sample.png"],
+            ["portfolio-images/gainboy-main.png", "portfolio-images/gainboy-log.png", "portfolio-images/gainboy-log-sample.png", "portfolio-images/gainboy-log-sample-edit.png"],
             ["portfolio-images/scavengers-sample1.png", "portfolio-images/scavengers-sample2.png", "portfolio-images/scavengers-inv.png"]
         ],
         changeImg: function(direction, imageIdx) {
